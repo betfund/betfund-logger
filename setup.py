@@ -30,6 +30,7 @@ setup(
     tests_require=[
         "black",
         "pylint",
-        "pytest"
+        "pytest",
+        "pytest-cov"
     ]
 )

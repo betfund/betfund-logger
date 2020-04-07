@@ -1,4 +1,4 @@
-"""Betung logging utility."""
+"""Betfund logging utility."""
 
 import logging
 
@@ -68,7 +68,8 @@ class CloudLogger:
         )
         self.logger = logging.getLogger(log_stream)
         self.logger.addHandler(self.handler)
-        self.logger.info("Connected to AWS CloudWatch: %s (%s)", log_group, log_stream)
+        connection_log = "Connected to AWS CloudWatch (%s): %s (%s)"
+        self.logger.info(connection_log, aws_region, log_group, log_stream)
 
     def critical(self, message):
         """Write `CRITICAL` log level."""
