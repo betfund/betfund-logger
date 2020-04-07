@@ -1,12 +1,12 @@
 .PHONY: black
 black:
-	black betfund_logger
-	black tests
+	python -m black betfund_logger
+	python -m black tests
 
 .PHONY: tests
 tests:
-	pytest --cov=betfund_logger --cov-report term-missing .
+	python -m pytest --cov=betfund_logger --cov-report term-missing .
 
 .PHONY: lint
 lint:
-	pylint betfund_logger
+	python -m pylint betfund_logger
