@@ -8,7 +8,7 @@ from betfund_logger.base import BaseLogger
 class LocalLogger(BaseLogger):
     """Class to handle local logging.
 
-    NOTE: Subclasses `betfund_logger.BaseLogger`.
+    NOTE: Subclasses `betfund_logger.base.BaseLogger`.
 
     Attributes
     ----------
