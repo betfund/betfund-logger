@@ -9,7 +9,7 @@ from betfund_logger.base import BaseLogger
 class CloudLogger(BaseLogger):
     """Class to handle logging to AWS CloudWatch.
 
-    NOTE: Subclasses `betfund_logger.BaseLogger`.
+    NOTE: Subclasses `betfund_logger.base.BaseLogger`.
 
     Attributes
     ----------
