@@ -31,8 +31,6 @@ class LocalLogger(BaseLogger):
         # Setup handler and logger objects
         self.handler = FileHandler(log_stream, mode="a+")
         self.logger.addHandler(self.handler)
-        connection_log = "Connected to LocalLogger: (%s)"
-        self.logger.info(connection_log, log_stream)
 
     def __repr__(self):
         """String representation of LocalLogger object."""
