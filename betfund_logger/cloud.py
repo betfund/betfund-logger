@@ -64,8 +64,6 @@ class CloudLogger(BaseLogger):
             create_log_stream=False,
         )
         self.logger.addHandler(self.handler)
-        connection_log = "Connected to AWS CloudWatch (%s): %s (%s)"
-        self.logger.info(connection_log, aws_region, log_group, log_stream)
 
     def __repr__(self):
         """String representation of CloudLogger object."""
